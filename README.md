@@ -7,9 +7,13 @@ To install these files:
 
 
 Go to Finder,
+
 Applications
+
 Right Click on "HipChat"
+
 "Show Package Contents"
+
 Navigate to Contents/Resources
 
 Backup CSS Files.
