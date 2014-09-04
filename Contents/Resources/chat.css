@@ -223,7 +223,7 @@ p.timeBlock {
 }
 
 .systemMessage, .systemMessage.yellow {
-    background-color: #FFFBE7;
+    background-color: #FFFBE3;
 }
 
 .systemMessage .nameBlock, .systemMessage.yellow .nameBlock {
@@ -294,16 +294,18 @@ p.timeBlock {
 
 .atTag {
     display: inline-block;
-    padding: 0 3px;
+
     border: 1px solid #D0D0D0;
     background-color: #F5F5F5;
     -webkit-border-radius: 4px;
+    line-height: 20px;
+    height: 20px;
 }
 
 .atTagMe {
     color: #fff;
-    border: 1px solid #4783BF;
-    background: #3572b0;
+    border: 1px solid #6498C4;
+    background: #6498C4;
 }
 
 .hexPreview {
