@@ -1,7 +1,7 @@
-hipchat2.0-theme
+hipchat 2.0 theme
 ================
 
-This will allow you to use the old HipChat v2.0 theme in HipChat 3.x
+This will allow you use a similar HipChat v2.0 theme in HipChat 3.x
 
 To install these files:
 
