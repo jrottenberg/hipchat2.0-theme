@@ -1,0 +1,60 @@
+p, div {
+    font-family: Helvetica;
+}
+
+p, div, .nameBlock p, .messageBlock p, .messageBlock div, .messageBlock pre {
+    /* These are %-based to enable text size scaling options. The default text size is defined
+        by a function on the WebPreferences object */
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.messageBlock p {
+	color: #333333;
+}
+
+p.timeBlock {
+    font-size: 11px;
+    margin-right: 10px;
+    margin-left: 10px;
+	color: #999999;
+}
+
+.infoBlock p {
+	color: #999999;
+}
+
+.dateDivider {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.nameBlock {
+    width: 130px;
+    border-right: 1px solid #E1E1E1;
+}
+
+.nameBlock p {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight:bold;
+}
+
+.image img {
+    max-width: 300px;
+    max-height: 250px;
+}
+
+.linkTitle {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.linkDesc {
+    color: #888;
+    margin-left: 10px;
+}
+
+#loading_spinner {
+    background-color: #ffffff;
+}
