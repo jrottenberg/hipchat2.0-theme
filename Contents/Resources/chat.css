@@ -14,7 +14,7 @@ li {
 }
 
 a {
-    color: #3572b0;
+    color: #2E5E9F;
 }
 
 .systemMessage.green a {
@@ -48,8 +48,8 @@ table {
 .chatBlock.them+.systemMessage.them {
     border-top: 1px solid #E1E1E1;
 }
-.chatBlock.me+.chatBlock.me, .preview+.chatBlock.me {
-    border-top: 1px solid #E1E1E1;
+.chatBlock.me {
+    border-top: 1px solid #B1CCE6;
 }
 .systemMessage.red+.systemMessage.red,
 .systemMessage.green+.systemMessage.green,
@@ -85,6 +85,10 @@ table {
     color: #666;
 }
 
+.linkBlock {
+    border-top:1px solid #f5f5f5;
+}
+
 .linkBlock .icon {
     height: 16px;
     width: 16px;
@@ -94,7 +98,7 @@ table {
 }
 
 .linkBlock .linkPreview {
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .linkBlock .linkPreview:first-child {
@@ -196,7 +200,11 @@ table {
 }
 
 .me .nameBlock {
+    border-right: 1px solid #B1CCE6;
+}
 
+.them .nameBlock {
+    background-color: #f5f5f5;
 }
 /* Add padding to make up for the missing borders on name/message blocks */
 .infoBlock p {
