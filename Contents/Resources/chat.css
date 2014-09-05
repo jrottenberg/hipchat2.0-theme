@@ -253,9 +253,7 @@ p.timeBlock {
     background-color: #FFFBE3;
 }
 
-.systemMessage .nameBlock, .systemMessage.yellow .nameBlock {
-    border-right-color: #FFFAEA;
-}
+
 
 .systemMessage .messageBlock {
     margin-bottom: 4px;
