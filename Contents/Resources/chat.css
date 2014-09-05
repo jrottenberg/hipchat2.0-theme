@@ -99,6 +99,7 @@ table {
 
 .linkBlock .linkPreview {
     margin-top: 0px;
+    border-left: none;
 }
 
 .linkBlock .linkPreview:first-child {
@@ -201,6 +202,24 @@ table {
 
 .me .nameBlock {
     border-right: 1px solid #B1CCE6;
+}
+
+.systemMessage.green .nameBlock {
+    background-color: #D8F1C1;
+    border-right:1px solid #B1DE7A;
+}
+
+.systemMessage.yellow .nameBlock {
+    background-color: #FDE8BA;
+    border-right:1px solid #dfc69a;
+}
+
+.chatBlock.systemMessage.yellow  {
+    border-top-color: #E7D5B8;
+}
+
+.chatBlock.systemMessage.green {
+    border-top-color: #b1de7a;
 }
 
 .them .nameBlock {
