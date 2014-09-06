@@ -214,6 +214,11 @@ table {
     border-right:1px solid #dfc69a;
 }
 
+.systemMessage.red .nameBlock {
+    background-color: #F0C4C5;
+    border-right:1px solid #DA9EA0;
+}
+
 .chatBlock.systemMessage.yellow  {
     border-top-color: #E7D5B8;
 }
@@ -383,7 +388,7 @@ p.hiddenImage a:hover {
 .xdateDivider:after {
     content: "-_";
     color: white;
-    background-color: red;
+    background-color: white;
 }
 
 .chatDivider {
