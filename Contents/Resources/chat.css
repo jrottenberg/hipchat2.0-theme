@@ -14,15 +14,7 @@ li {
 }
 
 a {
-    color: #3572b0;
-}
-
-.systemMessage.green a {
-	color: #106E23;
-}
-
-.systemMessage.red a {
-	color: #BD382C;
+    color: #3E74AD;
 }
 
 table {
@@ -40,25 +32,26 @@ table {
 /* Setup cases where borders should show between messages */
 .chatBlock {
     border-collapse: collapse;
+    border-top: 1px solid #E1E1E1;
 }
 .chatBlock.them+.chatBlock.them, .scrollAnchor+.chatBlock.them, .preview+.chatBlock.them {
-    border-top: 1px solid #EFEFEF;
+    border-top: 1px solid #E1E1E1;
 }
 .chatBlock.them+.systemMessage.them {
-	border-top: none;
+    border-top: 1px solid #E1E1E1;
 }
-.chatBlock.me+.chatBlock.me, .preview+.chatBlock.me {
-    border-top: 1px solid #ffffff;
+.chatBlock.me {
+    border-top: 1px solid #B1CCE6;
 }
 .systemMessage.red+.systemMessage.red,
 .systemMessage.green+.systemMessage.green,
 .systemMessage.purple+.systemMessage.purple,
 .systemMessage.gray+.systemMessage.gray {
-    border-top: 1px solid #FFFFFF;
+    border-top: 1px solid #E1E1E1;
 }
 
 .systemMessage.yellow+.systemMessage.yellow {
-	border-top: 1px solid #EAEAEA;
+    border-top: 1px solid #E1E1E1;
 }
 .chatBlock .messageWrapper {
     margin: 1px 10px 0 10px;
@@ -73,7 +66,7 @@ table {
 }
 
 .chatBlock td {
-    padding: 8px 0;
+    padding: 4px 0;
 }
 
 .fileBlock .icon {
@@ -82,6 +75,15 @@ table {
 
 .fileBlock .fileSize {
     color: #666;
+}
+
+.linkBlock {
+    border-top:1px solid #f5f5f5;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
+}
+
+.me.linkBlock {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F1F1F1), color-stop(1, #F3F7FB));
 }
 
 .linkBlock .icon {
@@ -93,7 +95,7 @@ table {
 }
 
 .linkBlock .linkPreview {
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .linkBlock .linkPreview:first-child {
@@ -101,13 +103,11 @@ table {
 }
 
 .linkBlock .linkPreview p {
-    margin: 0;
     margin-left: 30px;
 }
 
 .me {
     background-color: #F3F7FB;
-    border-top-color: #FFFFFF;
 }
 
 .them {
@@ -196,7 +196,34 @@ table {
 }
 
 .me .nameBlock {
-    border-top-color: #F3F7FB;
+    border-right: 1px solid #B1CCE6;
+}
+
+.systemMessage.green .nameBlock {
+    background-color: #DFF2CE;
+    border-right:1px solid #BEE090;
+}
+
+.systemMessage.yellow .nameBlock {
+    background-color: #FDEBC8;
+    border-right:1px solid #E5CFAC;
+}
+
+.systemMessage.red .nameBlock {
+    background-color: #F0C4C5;
+    border-right:1px solid #DA9EA0;
+}
+
+.chatBlock.systemMessage.yellow  {
+    border-top-color: #E7D5B8;
+}
+
+.chatBlock.systemMessage.green {
+    border-top-color: #b1de7a;
+}
+
+.them .nameBlock {
+    background-color: #f7f7f7;
 }
 /* Add padding to make up for the missing borders on name/message blocks */
 .infoBlock p {
@@ -226,10 +253,7 @@ p.timeBlock {
     background-color: #FFFBE3;
 }
 
-.systemMessage .nameBlock, .systemMessage.yellow .nameBlock {
-    border-top-color: #FFFAEA;
-    border-right-color: #FFFAEA;
-}
+
 
 .systemMessage .messageBlock {
     margin-bottom: 4px;
@@ -240,7 +264,6 @@ p.timeBlock {
 }
 
 .systemMessage.red .nameBlock {
-    border-top-color: #FFF2F2;
 }
 
 .systemMessage.gray {
@@ -248,7 +271,7 @@ p.timeBlock {
 }
 
 .systemMessage.gray .nameBlock {
-    border-top-color: #f5f5f5;
+
 }
 
 .systemMessage.purple {
@@ -256,7 +279,7 @@ p.timeBlock {
 }
 
 .systemMessage.purple .nameBlock {
-    border-top-color: #EEE8FC;
+
 }
 
 .systemMessage.green {
@@ -264,17 +287,15 @@ p.timeBlock {
 }
 
 .systemMessage.green .nameBlock {
-    border-top-color: #FFFAEA;
+
 }
 
 .welcomeMessage {
     background-color: #F5F8E7;
-    border-top-color: #BDE18C;
 }
 
 .welcomeMessage .nameBlock {
     color: #75510F;
-    border-top-color: #FFFAEA;
 }
 
 .welcomeMessage .messageBlock {
@@ -305,7 +326,7 @@ p.timeBlock {
 .atTagMe {
     color: #fff;
     border: 1px solid #6498C4;
-    background: #6498C4;
+    background-color: #5587b7;
 }
 
 .hexPreview {
@@ -335,20 +356,17 @@ p.hiddenImage a:hover {
 }
 
 .dateDivider {
+    border-top:1px groove #fff;
+    padding-top:5px;
     text-align: center;
-    height: 1px;
-    background-color: #e5e5e5;
-    margin: 30px 0;
+    height: 18px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F1F1F1), color-stop(1, #DADADA));
 }
 
 .dateDivider span {
-	background-color: #fff;
 	font-size: 11px;
 	color: #333;
-	font-weight: normal;
-	position: relative;
-	top: -8px;
-	padding: 0 8px;
+	font-weight: bold;
 }
 
 .xdateDivider:first-line {
@@ -449,7 +467,7 @@ p.hiddenImage a:hover {
     font-family: monospace;
 }
 .truncated+.showHideLinkContainer {
-    border-top: 1px solid #efefef;
+    border-top: 1px solid #E1E1E1;
 }
 
 .prettyprinted {

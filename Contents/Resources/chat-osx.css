@@ -1,16 +1,16 @@
 p, div {
-    font-family: Helvetica;
+    font-family: 'Lucida Grande';
 }
 
 p, div, .nameBlock p, .messageBlock p, .messageBlock div, .messageBlock pre {
     /* These are %-based to enable text size scaling options. The default text size is defined
         by a function on the WebPreferences object */
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .messageBlock p {
-	color: #333333;
+	color: #000;
 }
 
 p.timeBlock {
@@ -25,8 +25,8 @@ p.timeBlock {
 }
 
 .dateDivider {
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 12px;
+    line-height: 12px;
 }
 
 .nameBlock {
@@ -37,7 +37,7 @@ p.timeBlock {
 .nameBlock p {
     padding-right: 10px;
     padding-left: 10px;
-    font-weight:bold;
+    font-weight: 600;
 }
 
 .image img {
