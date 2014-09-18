@@ -3,6 +3,13 @@
 
 When I upgraded to HipChat v3.0 I got fustrated because the new theme it's worse than the previous version. After looking at the Resources folder I relized that it's using plain CSS. I started to make some changes and came up with this CSS version that looks similar to the Hipchat v2.0 theme.
 
+Current Hipchat 3.0.4 theme
+
+![alt tag](https://github.com/yagoferrer/hipchat2.0-theme/blob/master/private-v3.png)
+
+With HipChat 2.0 Theme Applied. 
+![alt tag](https://raw.githubusercontent.com/yagoferrer/hipchat2.0-theme/master/private-custom.png)
+
 ##This is how to install:
 
 
