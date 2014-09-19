@@ -15,7 +15,7 @@ for file in ${ASSETS}; do
 	echo -e "\n\tWorking on $file"
 	mv ${HIPCHAT_APP}/${file} ${HIPCHAT_APP}/${file}_${NOW}
 	wget --quiet --output-document=${HIPCHAT_APP}/${file} ${SANE_CSS}/${file}
-	echo "\tNew version installed, backup version at ${HIPCHAT_APP}/${file}_${NOW}"
+	echo -e "\tNew version installed, backup version at ${HIPCHAT_APP}/${file}_${NOW}"
 done
 
 echo -e "\n\n\tAll done, please restart Hipchat to take advantage of the 2.0 theme\n\n"
